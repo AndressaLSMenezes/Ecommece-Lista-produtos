@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/mobileStyle.css" />
+    <link rel="stylesheet" href="./src/css/desktopStyle.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fontawesome.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +22,7 @@
     <!-- CABEÇALHO -->
     <header>
       <h1>Shop now</h1>
-    </header>
-    <!-- PARTE PRINCIPAL -->
-    <main>
+
       <section class="filtersContainer">
         <div id="botoesContainer">
           <button class="estiloGeralBotoes estiloGeralBotoes--filter" id="buttonTodos">
@@ -44,41 +45,47 @@
             placeholder="Pesquisar por"
             class="campoBuscaPorNome"
           />
-          <button
-            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome" id = 'buttonPesquisa'
-          >
+
+          <button id = 'buttonPesquisa'>
             <img src="./src/img/search.png" alt="lupa" />
           </button>
+
         </div>
       </section>
-      <section class="priceContainer">
-        <div>
-            <img src="./src/img/alert-circle.png" alt="exclamação de alerta">
-            <p>Valor total dos produtos da sessão selecionada</p>
-        </div>
-        <span class="priceContainerSpan">R$ 0.00</span>
-      </section>
+      
+    </header>
+    <!-- PARTE PRINCIPAL -->
+    <main>
+
+
       <!-- CONTAINER DE PRODUTOS -->
       <section class="containerVitrine">
         <div class="containerListaProdutos">
          <ul class="containerListaProdutosUl">
-                    <!-- Utilize esse item html como template para a construção da lista de produtos
-                    
-                    Você pode remover esses comentários depois que fizer a construção pelo DOM -->
-                    
-            
-                    <!-- <li>
-                        <img src="./src/img/maça.png" alt="Imagem maçã">
-                        <h3>Maçã</h3>
-                        <span>Hortifruti</span>
-                        <p>R$ 2.00</p>
-                    </li> -->
-                    
-                </ul>
+
+         </ul>
         </div>
       </section>
+
+      <aside>
+        <div id="labelcart">
+          <img src="./src/img/cart.png" alt="Carrinho de supermercado">
+          <h1>Carrinho</h1>
+        </div>
+        
+        <div class="cart_space">
+
+        </div>
+
+        <div class = 'price'>
+
+        </div>
+      </aside>
+
     </main>
     <script src="./src/js/dataProdutos.js"></script>
-    <script src="./src/js/script.js"></script>
+    <script src="./src/js/buttonNav.js"></script>
+    <script src="./src/js/scriptCart.js"></script>
+    <script src="./src/js/cardCreator.js"></script>
   </body>
 </html>
